@@ -1,14 +1,20 @@
 (function($) {
     "use strict";
+    
+    var pie = 3.141592653589793;    
 
-    var calcArea = function() {
+    var calcArea1 = function() {
         var width = Number( $('#width').val() );
         var height = Number( $('#height').val() );   
         var totArea = width * height;       
-        $('#totalArea').text('$' + totArea.toFixed(2));
+        $('#totalArea1').text(totArea.toFixed(2));
     };
-
-    var tipPercent = 15.0;
+    
+    var calcArea2 = function() {
+        var radius = Number( $('#radius').val() ); 
+        var totArea = pie * (radius * radius);       
+        $('#totalArea2').text(totArea.toFixed(2));
+    };    
 
     var calcTip = function() {
         var billAmt = Number( $('#billAmount').val() );
@@ -30,7 +36,8 @@
     };
 
     $( document ).on( "ready", function(){
-        $('#calcArea').on('click', calcArea);
+        $('#calcArea1').on('click', calcArea1);
+        $('#calcArea2').on('click', calcArea2);        
     });
 
     $( document ).on( "deviceready", function(){

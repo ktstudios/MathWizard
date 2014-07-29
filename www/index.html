@@ -15,24 +15,58 @@
         <h1>Math Wizard</h1>
     </div>  
      <div data-role="content" class="">
-        <a href="#areaPage" id='areaButton' class="ui-btn" data-role="button">Area</a>    
+        <a href="#areaSelectPage" id='areaButton' class="ui-btn" data-role="button">Area</a>    
     </div>   
 </div>
-<div data-role="page" class="" id="areaPage" data-add-back-btn="true" >
+<div data-role="page" class="" id="areaSelectPage">
+    <div data-role="header" class="">
+        <h1>Area</h1>
+    </div>  
+     <div data-role="content" class="">
+        <a href="#areaPage1" id='areaButton1' class="ui-btn" data-role="button">Rectangle</a>  
+        <a href="#areaPage2" id='areaButton2' class="ui-btn" data-role="button">Circle</a>     
+        <a href="#areaPage3" id='areaButton3' class="ui-btn" data-role="button">Cone</a>  
+        <a href="#areaPage4" id='areaButton4' class="ui-btn" data-role="button">Cube</a>  
+        <a href="#areaPage5" id='areaButton5' class="ui-btn" data-role="button">Cylinder</a>  
+        <a href="#areaPage6" id='areaButton6' class="ui-btn" data-role="button">Ellipse</a>     
+        <a href="#areaPage7" id='areaButton7' class="ui-btn" data-role="button">Square</a>  
+        <a href="#areaPage8" id='areaButton8' class="ui-btn" data-role="button">Trapezoid</a>
+        <a href="#areaPage9" id='areaButton9' class="ui-btn" data-role="button">Triangle</a>                             
+    </div>   
+</div>
+<div data-role="page" class="" id="areaPage1" data-add-back-btn="true" >
     <div data-role="header" class="">
         <a href="#mainPage" class="ui-btn ui-icon-delete ui-btn-icon-left" data-rel="back">Cancel</a>
-        <h1>Calculate Area - Rectangle</h1>
+        <h1>Area - Rectangle</h1>
     </div>
     <div data-role="content" class="">
         <form>
             <input type="number" name="width" id="width" data-clear-btn="true" maxlength="3" value="" placeholder="Width">
             <input type="number" name="height" id="height" data-clear-btn="true" maxlength="3" value="" placeholder="Height">
             <p style="text-align: center;">
-                <a href="#" id='calcArea' data-role="button" data-icon="check">Calculate</a>
+                <a href="#" id='calcArea1' data-role="button" data-icon="check">Calculate</a>
             </p>
             <p class="amounts totals">
                 <label>Total Area</label>
-                <span id="totalArea">0.00</span>
+                <span id="totalArea1">0.00</span>
+            </p>            
+        </form>
+    </div>
+</div>
+<div data-role="page" class="" id="areaPage2" data-add-back-btn="true" >
+    <div data-role="header" class="">
+        <a href="#mainPage" class="ui-btn ui-icon-delete ui-btn-icon-left" data-rel="back">Cancel</a>
+        <h1>Area - Circle</h1>
+    </div>
+    <div data-role="content" class="">
+        <form>
+            <input type="number" name="radius" id="radius" data-clear-btn="true" maxlength="3" value="" placeholder="radius">
+            <p style="text-align: center;">
+                <a href="#" id='calcArea2' data-role="button" data-icon="check">Calculate</a>
+            </p>
+            <p class="amounts totals">
+                <label>Total Area</label>
+                <span id="totalArea2">0.00</span>
             </p>            
         </form>
     </div>
