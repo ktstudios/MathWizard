@@ -20,6 +20,7 @@
 </div>
 <div data-role="page" class="" id="areaSelectPage">
     <div data-role="header" class="">
+        <a href="#mainPage" class="ui-btn ui-icon-delete ui-btn-icon-left" data-rel="back">Cancel</a>    
         <h1>Area</h1>
     </div>  
      <div data-role="content" class="">
@@ -40,6 +41,7 @@
         <h1>Area - Rectangle</h1>
     </div>
     <div data-role="content" class="">
+        <h3>area = w * h</h3>    
         <form>
             <input type="number" name="width" id="width" data-clear-btn="true" maxlength="3" value="" placeholder="Width">
             <input type="number" name="height" id="height" data-clear-btn="true" maxlength="3" value="" placeholder="Height">
@@ -59,7 +61,8 @@
         <h1>Area - Circle</h1>
     </div>
     <div data-role="content" class="">
-        <form>
+        <h3>area = &pi;r&sup2;</h3>
+        <form>       
             <input type="number" name="radius" id="radius" data-clear-btn="true" maxlength="3" value="" placeholder="radius">
             <p style="text-align: center;">
                 <a href="#" id='calcArea2' data-role="button" data-icon="check">Calculate</a>
@@ -67,6 +70,26 @@
             <p class="amounts totals">
                 <label>Total Area</label>
                 <span id="totalArea2">0.00</span>
+            </p>            
+        </form>
+    </div>
+</div>
+<div data-role="page" class="" id="areaPage3" data-add-back-btn="true" >
+    <div data-role="header" class="">
+        <a href="#mainPage" class="ui-btn ui-icon-delete ui-btn-icon-left" data-rel="back">Cancel</a>
+        <h1>Area - Cone</h1>
+    </div>
+    <div data-role="content" class="">
+        <h3>surface = &pi;r(r+s)</h3>    
+        <form>       
+            <input type="number" name="radius" id="radius" data-clear-btn="true" maxlength="3" value="" placeholder="radius">
+            <input type="number" name="slant" id="slant" data-clear-btn="true" maxlength="3" value="" placeholder="slant">            
+            <p style="text-align: center;">
+                <a href="#" id='calcArea3' data-role="button" data-icon="check">Calculate</a>
+            </p>
+            <p class="amounts totals">
+                <label>Total Surface</label>
+                <span id="totalArea3">0.00</span>
             </p>            
         </form>
     </div>
