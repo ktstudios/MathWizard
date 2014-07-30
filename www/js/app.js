@@ -4,62 +4,62 @@
     var pie = 3.141592653589793;    
 
     var calcArea1 = function() {
-        var width = Number( $('#width').val() );
-        var height = Number( $('#height').val() );   
+        var width = Number( $('#width1').val() );
+        var height = Number( $('#height1').val() );   
         var totArea = width * height;       
         $('#totalArea1').text(totArea.toFixed(2));
     };
     
     var calcArea2 = function() {
-        var radius = Number( $('#radius').val() ); 
+        var radius = Number( $('#radius2').val() ); 
         var totArea = pie * (radius * radius);       
         $('#totalArea2').text(totArea.toFixed(2));
     };    
     
     var calcArea3 = function() {
-        var radius = Number( $('#radius').val() ); 
-        var slant = Number( $('#slant').val() );               
+        var radius = Number( $('#radius3').val() ); 
+        var slant = Number( $('#slant3').val() );               
         var totArea = pie * radius * (radius + slant);       
         $('#totalArea3').text(totArea.toFixed(2));
     };   
     
     var calcArea4 = function() {
-        var side = Number( $('#side').val() );               
+        var side = Number( $('#side4').val() );               
         var totArea = 6*(side*side);       
         $('#totalArea4').text(totArea.toFixed(2));
     };   
     
     var calcArea5 = function() {
-        var radius = Number( $('#radius').val() );
-        var height = Number( $('#height').val() );                       
+        var radius = Number( $('#radius5').val() );
+        var height = Number( $('#height5').val() );                       
         var totArea = (2 * pie * (radius * radius)) + (2 * pie * radius * height);       
         $('#totalArea5').text(totArea.toFixed(2));
     };   
     
     var calcArea6 = function() {
-        var radius1 = Number( $('#radius1').val() );
-        var radius2 = Number( $('#radius2').val() );                       
+        var radius1 = Number( $('#radius61').val() );
+        var radius2 = Number( $('#radius62').val() );                       
         var totArea = pie * radius1 * radius2;       
         $('#totalArea6').text(totArea.toFixed(2));
     };             
 
     var calcArea7 = function() {
-        var side = Number( $('#side').val() );                     
+        var side = Number( $('#side7').val() );                     
         var totArea = side * side;       
         $('#totalArea7').text(totArea.toFixed(2));
     }; 
     
     var calcArea8 = function() {
-        var height = Number( $('#height').val() );        
-        var base1 = Number( $('#base1').val() ); 
-        var base2 = Number( $('#base2').val() );                              
+        var height = Number( $('#height8').val() );        
+        var base1 = Number( $('#base81').val() ); 
+        var base2 = Number( $('#base82').val() );                              
         var totArea = height * ((base1 + base2)/2);       
         $('#totalArea8').text(totArea.toFixed(2));
     };    
     
     var calcArea9 = function() {
-        var base = Number( $('#base').val() );    
-        var height = Number( $('#height').val() );                                     
+        var base = Number( $('#base9').val() );    
+        var height = Number( $('#height9').val() );                                     
         var totArea = (base * height)/2;       
         $('#totalArea9').text(totArea.toFixed(2));
     };      
